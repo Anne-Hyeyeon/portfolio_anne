@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /*
 =========================================================
 * Material Kit 2 React - v2.0.0
@@ -16,12 +17,10 @@ Coded by www.creative-tim.com
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Icon from "@mui/material/Icon";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKAvatar from "components/MKAvatar";
-import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 
 // Images
@@ -32,72 +31,33 @@ function Profile() {
     <MKBox component="section" py={{ xs: 6, sm: 12 }}>
       <Container>
         <Grid container item xs={12} justifyContent="center" mx="auto">
-          <MKBox mt={{ xs: -16, md: -20 }} textAlign="center">
-            <MKAvatar src={profilePicture} alt="Burce Mars" size="xxl" shadow="xl" />
+          <MKBox mt={{ xs: -25, md: -25 }} textAlign="center">
+            <MKAvatar
+              src={profilePicture}
+              alt="Anne Hyeyeon"
+              sx={{ width: 200, height: 200 }}
+              shadow="xl"
+            />
           </MKBox>
           <Grid container justifyContent="center" py={6}>
             <Grid item xs={12} md={7} mx={{ xs: "auto", sm: 6, md: 1 }}>
               <MKBox display="flex" justifyContent="space-between" alignItems="center" mb={1}>
-                <MKTypography variant="h3">Michael Roven</MKTypography>
-                <MKButton variant="outlined" color="info" size="small">
+                <MKTypography variant="h3">Hyeyeon Kim 🥰</MKTypography>
+                {/* <MKButton variant="outlined" color="info" size="small">
                   Follow
-                </MKButton>
+                </MKButton> */}
               </MKBox>
-              <Grid container spacing={3} mb={3}>
-                <Grid item>
-                  <MKTypography component="span" variant="body2" fontWeight="bold">
-                    323&nbsp;
-                  </MKTypography>
-                  <MKTypography component="span" variant="body2" color="text">
-                    Posts
-                  </MKTypography>
-                </Grid>
-                <Grid item>
-                  <MKTypography component="span" variant="body2" fontWeight="bold">
-                    3.5k&nbsp;
-                  </MKTypography>
-                  <MKTypography component="span" variant="body2" color="text">
-                    Followers
-                  </MKTypography>
-                </Grid>
-                <Grid item>
-                  <MKTypography component="span" variant="body2" fontWeight="bold">
-                    260&nbsp;
-                  </MKTypography>
-                  <MKTypography component="span" variant="body2" color="text">
-                    Following
-                  </MKTypography>
-                </Grid>
-              </Grid>
-              <MKTypography variant="body1" fontWeight="light" color="text">
-                Decisions: If you can&apos;t decide, the answer is no. If two equally difficult
-                paths, choose the one more painful in the short term (pain avoidance is creating an
-                illusion of equality). Choose the path that leaves you more equanimous. <br />
-                <MKTypography
-                  component="a"
-                  href="#"
-                  variant="body1"
-                  fontWeight="light"
-                  color="info"
-                  mt={3}
-                  sx={{
-                    width: "max-content",
-                    display: "flex",
-                    alignItems: "center",
-
-                    "& .material-icons-round": {
-                      transform: `translateX(3px)`,
-                      transition: "transform 0.2s cubic-bezier(0.34, 1.61, 0.7, 1.3)",
-                    },
-
-                    "&:hover .material-icons-round, &:focus .material-icons-round": {
-                      transform: `translateX(6px)`,
-                    },
-                  }}
-                >
-                  More about me <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+              <MKBox>
+                <MKTypography component="span" variant="body1">
+                  2022.02~2022.06 신촌 코리아 아카데미 프론트엔드 과정 수료
                 </MKTypography>
-              </MKTypography>
+                <MKTypography mt={2} variant="body2" fontWeight="light" color="text">
+                  머릿속이 재미난 상상으로 가득 차있습니다.
+                  <br />
+                  그 아이디어를 꺼내 사람들에게도 보여주고 싶었지만, 아쉽게도 손재주가 없었습니다. <br />
+                  다행히도, 똥손도 멋진 작품을 만들 수 있는 시대에 태어났습니다. <br />
+                </MKTypography>
+              </MKBox>
             </Grid>
           </Grid>
         </Grid>

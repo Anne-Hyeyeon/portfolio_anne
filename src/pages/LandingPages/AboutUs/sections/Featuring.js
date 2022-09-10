@@ -19,67 +19,44 @@ import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
+import MKTypography from "components/MKTypography";
 
 // Material Kit 2 React examples
-import DefaultCounterCard from "examples/Cards/CounterCards/DefaultCounterCard";
-
-// Images
-import coinbase from "assets/images/logos/gray-logos/logo-coinbase.svg";
-import nasa from "assets/images/logos/gray-logos/logo-nasa.svg";
-import netflix from "assets/images/logos/gray-logos/logo-netflix.svg";
-import pinterest from "assets/images/logos/gray-logos/logo-pinterest.svg";
-import spotify from "assets/images/logos/gray-logos/logo-spotify.svg";
-import vodafone from "assets/images/logos/gray-logos/logo-vodafone.svg";
+import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
 function Featuring() {
   return (
     <MKBox component="section" pt={3} pb={8}>
       <Container>
-        <Grid container spacing={3} sx={{ mb: 12 }}>
-          <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={coinbase} alt="coinbase" width="100%" opacity={0.7} />
-          </Grid>
-          <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={nasa} alt="nasa" width="100%" opacity={0.7} />
-          </Grid>
-          <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={netflix} alt="netflix" width="100%" opacity={0.7} />
-          </Grid>
-          <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={pinterest} alt="pinterest" width="100%" opacity={0.7} />
-          </Grid>
-          <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={spotify} alt="spotify" width="100%" opacity={0.7} />
-          </Grid>
-          <Grid item xs={6} md={4} lg={2}>
-            <MKBox component="img" src={vodafone} alt="vodafone" width="100%" opacity={0.7} />
-          </Grid>
-        </Grid>
         <Grid container justifyContent="center" sx={{ textAlign: "center" }}>
           <Grid item xs={12} md={3}>
-            <DefaultCounterCard
-              count={5234}
-              separator=","
-              title="Projects"
-              description="Of “high-performing” level are led by a certified project manager"
-            />
+            <DefaultInfoCard icon="school" title="Education" direction="center" />
+            <MKTypography variant="body2" color="text" textAlign="center">
+              경희대학교 한국어학과, 국제학과
+              <br /> 2011.03 ~ 2016.02
+            </MKTypography>
           </Grid>
           <Grid item xs={12} md={3}>
-            <DefaultCounterCard
-              count={3400}
-              separator=","
-              suffix="+"
-              title="Hours"
-              description="That meets quality standards required by our users"
-            />
+            <DefaultInfoCard icon="public" title="Language Skills" direction="center" />
+            <MKTypography variant="body2" color="text">
+              영어 - 상
+              <br />
+              (TOEIC 930, OPIC IH, 회화 가능)
+              <br />
+              중국어 - 하
+              <br />
+              (음독, 간단한 생활회화 가능)
+            </MKTypography>
           </Grid>
           <Grid item xs={12} md={3}>
-            <DefaultCounterCard
-              count={24}
-              suffix="/7"
-              title="Support"
-              description="Actively engage team members that finishes on time"
-            />
+            <DefaultInfoCard icon="accessibility" title="Hobbies" direction="center" />
+            <MKTypography variant="body2" color="text" textAlign="center">
+              👩‍💻 블로그 관리
+              <br />
+              💻 자막 없이 외국 유튜브 보기
+              <br />
+              👟 에어로빅, 점핑 운동하기
+            </MKTypography>
           </Grid>
         </Grid>
       </Container>

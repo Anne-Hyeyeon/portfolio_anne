@@ -60,8 +60,10 @@ function Team() {
                 image={team1}
                 name="Emma Roberts"
                 position={{ color: "info", label: "UI Designer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
               />
+              <MKTypography variant="h3" color="white">
+                The Executive Team
+              </MKTypography>
             </MKBox>
           </Grid>
           <Grid item xs={12} lg={6}>
