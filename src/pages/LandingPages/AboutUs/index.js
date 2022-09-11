@@ -16,7 +16,6 @@ Coded by www.creative-tim.com
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Card from "@mui/material/Card";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
@@ -39,7 +38,7 @@ import bgImage from "assets/images/bg-about-us.jpg";
 import Pages from "pages/Presentation/sections/Pages";
 // eslint-disable-next-line import/order
 import { FormatBold } from "@mui/icons-material";
-import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
+import FeaturesOne from "layouts/sections/page-sections/featuers/components/FeaturesOne";
 import Profile from "../Author/sections/Profile";
 
 function AboutUs() {
@@ -123,93 +122,10 @@ function AboutUs() {
         </Container>
       </MKBox>
       <Profile />
-      <Card
-        sx={{
-          p: 2,
-          mx: { xs: 2, lg: 3 },
-          mt: -8,
-          mb: 4,
-          boxShadow: ({ boxShadows: { xxl } }) => xxl,
-        }}
-      >
-        <Featuring />
-        <Download />
-        <Pages />
-      </Card>
-      <Container>
-        <MKBox
-          variant="gradient"
-          bgColor="dark"
-          position="relative"
-          borderRadius="xl"
-          sx={{ overflow: "hidden" }}
-        >
-          <MKBox
-            component="img"
-            src={bgImage}
-            alt="pattern-lines"
-            position="absolute"
-            top={0}
-            left={0}
-            width="100%"
-            zIndex={1}
-            opacity={0.2}
-          />
-          <Container sx={{ position: "relative", zIndex: 2, py: 12 }}>
-            <Grid
-              container
-              item
-              xs={12}
-              md={7}
-              justifyContent="center"
-              mx="auto"
-              textAlign="center"
-            >
-              <MKTypography variant="h3" color="white">
-                Do you love this awesome
-              </MKTypography>
-              <MKTypography variant="h3" color="white" mb={1}>
-                UI Kit for ReactJS &amp; MUI?
-              </MKTypography>
-              <MKTypography variant="body2" color="white" mb={6}>
-                Cause if you do, it can be yours for FREE. Hit the button below to navigate to
-                Creative Tim where you can find the Design System in HTML. Start a new project or
-                give an old Bootstrap project a new look!
-              </MKTypography>
-              <MKButton
-                variant="gradient"
-                color="info"
-                size="large"
-                component="a"
-                href="https://www.creative-tim.com/product/material-kit-react"
-                sx={{ mb: 2 }}
-              >
-                Download Now
-              </MKButton>
-            </Grid>
-          </Container>
-        </MKBox>
-      </Container>
-      <MKBox
-        variant="gradient"
-        bgColor="dark"
-        position="relative"
-        borderRadius="xl"
-        sx={{ overflow: "hidden" }}
-      >
-        <MKBox
-          component="img"
-          src={bgImage}
-          alt="pattern-lines"
-          position="absolute"
-          top={0}
-          left={0}
-          width="100%"
-          zIndex={1}
-          opacity={0.2}
-        />
-      </MKBox>
-      <BuiltByDevelopers />
+      <Featuring />
+      <Download />
+      <Pages />
+      <FeaturesOne />
       <Testimonials />
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />

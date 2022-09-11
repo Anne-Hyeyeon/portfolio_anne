@@ -61,9 +61,6 @@ function Team() {
                 name="Emma Roberts"
                 position={{ color: "info", label: "UI Designer" }}
               />
-              <MKTypography variant="h3" color="white">
-                The Executive Team
-              </MKTypography>
             </MKBox>
           </Grid>
           <Grid item xs={12} lg={6}>

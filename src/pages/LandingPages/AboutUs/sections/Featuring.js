@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /*
 =========================================================
 * Material Kit 2 React - v2.0.0
@@ -26,8 +27,12 @@ import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
 function Featuring() {
   return (
-    <MKBox component="section" pt={3} pb={8}>
+    <MKBox bgColor="#fff" component="section" py={15}>
       <Container>
+        <MKTypography textAlign="center" variant="h2" mb={4}>
+          {" "}
+          👩🏻 Who's Hyeyeon?
+        </MKTypography>
         <Grid container justifyContent="center" sx={{ textAlign: "center" }}>
           <Grid item xs={12} md={3}>
             <DefaultInfoCard icon="school" title="Education" direction="center" />

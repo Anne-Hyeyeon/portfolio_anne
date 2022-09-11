@@ -26,6 +26,7 @@ import MKTypography from "components/MKTypography";
 // Images
 import profilePicture from "assets/images/bruce-mars.jpg";
 
+
 function Profile() {
   return (
     <MKBox component="section" py={{ xs: 6, sm: 12 }}>
@@ -49,13 +50,10 @@ function Profile() {
               </MKBox>
               <MKBox>
                 <MKTypography component="span" variant="body1">
-                  2022.02~2022.06 신촌 코리아 아카데미 프론트엔드 과정 수료
+                  2022.02~2022.06 신촌 코리아 IT 아카데미 프론트엔드 과정 수료
                 </MKTypography>
                 <MKTypography mt={2} variant="body2" fontWeight="light" color="text">
-                  머릿속이 재미난 상상으로 가득 차있습니다.
-                  <br />
-                  그 아이디어를 꺼내 사람들에게도 보여주고 싶었지만, 아쉽게도 손재주가 없었습니다. <br />
-                  다행히도, 똥손도 멋진 작품을 만들 수 있는 시대에 태어났습니다. <br />
+                  개발자가 되고 싶어 퇴근 후 6개월동안 코딩 공부를 했습니다!
                 </MKTypography>
               </MKBox>
             </Grid>

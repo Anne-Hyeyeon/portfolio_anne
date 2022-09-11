@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 /*
 =========================================================
 * Material Kit 2 React - v2.0.0
@@ -68,7 +69,7 @@ function BaseLayout({ breadcrumb, title, children }) {
 
 // Typechecking props for the BaseLayout
 BaseLayout.propTypes = {
-  breadcrumb: PropTypes.arrayOf(PropTypes.object).isRequired,
+  breadcrumb: PropTypes.objectOf,
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
 };

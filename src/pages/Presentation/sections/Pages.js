@@ -33,7 +33,7 @@ import data from "pages/Presentation/sections/data/pagesData";
 
 function Pages() {
   const renderData = data.map(({ image, name, route, description }) => (
-    <Grid item xs={12} md={6} sx={{ mb: { xs: 15, lg: 10 } }} key={name}>
+    <Grid item xs={12} md={6} sx={{ mb: { xs: 7, lg: 10 } }} key={name}>
       <Link to={route}>
         <ExampleCard image={image} name={name} display="grid" minHeight="auto" />
       </Link>
@@ -44,7 +44,7 @@ function Pages() {
   ));
 
   return (
-    <MKBox component="section" py={6}>
+    <MKBox component="section" py={15} bgColor="#fff">
       <Container>
         <Grid
           container
@@ -55,12 +55,12 @@ function Pages() {
           alignItems="center"
           sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
         >
-          <MKTypography variant="h2" fontWeight="bold">
+          <MKTypography variant="h2" fontWeight="bold" mb={1} mt={-3}>
             💻 Hyeyeon's Projects
           </MKTypography>
         </Grid>
       </Container>
-      <Container sx={{ mt: { xs: 2, lg: 4 } }}>
+      <Container>
         <Grid container spacing={3}>
           <Grid item xs={12} lg={12} sx={{ mt: 3, px: { xs: 0, lg: 8 } }}>
             <Grid container spacing={3}>
