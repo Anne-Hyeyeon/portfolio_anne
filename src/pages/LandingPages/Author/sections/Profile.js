@@ -25,21 +25,28 @@ import MKTypography from "components/MKTypography";
 
 // Images
 import profilePicture from "assets/images/bruce-mars.jpg";
+// import { Button } from "@mui/material";
 
+// import { useState } from "react";
 
 function Profile() {
+// const [picNum, setPickNum] = useState(0);
+
   return (
     <MKBox component="section" py={{ xs: 6, sm: 12 }}>
       <Container>
         <Grid container item xs={12} justifyContent="center" mx="auto">
-          <MKBox mt={{ xs: -25, md: -25 }} textAlign="center">
-            <MKAvatar
-              src={profilePicture}
-              alt="Anne Hyeyeon"
-              sx={{ width: 200, height: 200 }}
-              shadow="xl"
-            />
-          </MKBox>
+          {/* <Button onClick={alert("hello")}> */}
+            <MKBox mt={{ xs: -25, md: -25 }} 
+            textAlign="center">
+              <MKAvatar
+                src={profilePicture}
+                alt="Anne Hyeyeon"
+                sx={{ width: 200, height: 200 }}
+                shadow="xl"
+              />
+            </MKBox>
+          {/* </Button> */}
           <Grid container justifyContent="center" py={6}>
             <Grid item xs={12} md={7} mx={{ xs: "auto", sm: 6, md: 1 }}>
               <MKBox display="flex" justifyContent="space-between" alignItems="center" mb={1}>

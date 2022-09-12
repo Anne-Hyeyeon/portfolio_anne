@@ -37,24 +37,18 @@ import footerRoutes from "footer.routes";
 import bgImage from "assets/images/bg-about-us.jpg";
 import Pages from "pages/Presentation/sections/Pages";
 // eslint-disable-next-line import/order
+
+import { Fade, Bounce } from "react-reveal";
 import { FormatBold } from "@mui/icons-material";
-import FeaturesOne from "layouts/sections/page-sections/featuers/components/FeaturesOne";
+import Workone from "pages/Presentation/sections/Workone";
+import { Typing } from "typing-effect-reactjs";
+// import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import Profile from "../Author/sections/Profile";
 
 function AboutUs() {
   return (
     <>
-      {/* <DefaultNavbar
-        routes={routes}
-        action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
-          color: "default",
-        }}
-        transparent
-        light
-      /> */}
+      {/* <DefaultNavbar /> */}
       <MKBox
         minHeight="75vh"
         width="100%"
@@ -81,19 +75,39 @@ function AboutUs() {
             flexDirection="column"
             sx={{ mx: "auto", textAlign: "center" }}
           >
-            <MKTypography
-              variant="h1"
-              color="white"
-              sx={({ breakpoints, typography: { size } }) => ({
-                [breakpoints.down("md")]: {
-                  fontSize: size["3xl"],
-                },
-              })}
-            >
-              Better late than never.
+            <Bounce>
+              <MKTypography
+                variant="h1"
+                color="white"
+                sx={({ breakpoints, typography: { size } }) => ({
+                  [breakpoints.down("md")]: {
+                    fontSize: size["3xl"],
+                  },
+                })}
+              >
+                Better late than never.
+              </MKTypography>
+            </Bounce>
+            <MKTypography variant="body1" color="white" opacity={0.8} mt={3}>
+              안녕하세요!
             </MKTypography>
-            <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              프론트엔드 개발자 김혜연을 소개합니다.
+            <MKTypography variant="h3" color="white" opacity={0.8} mt={1} mb={3}>
+              <Typing
+                typeSpeed={150}
+                deleteSpeed={100}
+                text={[
+                  "무한한 가능성이 있는",
+                  "스나이퍼같은 집중력을 가진",
+                  "감성과 이성이 조화로운",
+                  "늘 새로운 목표를 세우고 실천해나가는",
+                  "매일 밥 같이 먹고 싶은",
+                ]}
+                disableBlinkingOnEnd={10}
+                smartBackspace
+              />
+              <MKTypography variant="body1" mt={1} color="white" opacity={0.8}>
+                개발자 김혜연의 포트폴리오입니다.
+              </MKTypography>
             </MKTypography>
             <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
               View More
@@ -122,11 +136,21 @@ function AboutUs() {
         </Container>
       </MKBox>
       <Profile />
-      <Featuring />
-      <Download />
-      <Pages />
-      <FeaturesOne />
-      <Testimonials />
+      <Fade Top>
+        <Featuring />
+      </Fade>
+      <Fade Bottom>
+        <Download />
+      </Fade>
+      <Fade Top>
+        <Pages />
+      </Fade>
+      <Fade Top>
+        <Workone />
+      </Fade>
+      <Bounce>
+        <Testimonials />
+      </Bounce>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
       </MKBox>

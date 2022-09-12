@@ -32,35 +32,9 @@ import bgBack from "assets/images/rotating-card-bg-back.jpeg";
 
 function Information() {
   return (
-    <MKBox component="section" py={6} my={6}>
+    <MKBox component="section" py={15} bgColor="#fff">
       <Container>
         <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
-          <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
-            <RotatingCard>
-              <RotatingCardFront
-                image={bgFront}
-                icon="touch_app"
-                title={
-                  <>
-                    Feel the
-                    <br />
-                    Material Kit
-                  </>
-                }
-                description="All the MUI components that you need in a development have been re-design with the new look."
-              />
-              <RotatingCardBack
-                image={bgBack}
-                title="Discover More"
-                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
-                action={{
-                  type: "internal",
-                  route: "/sections/page-sections/page-headers",
-                  label: "start with header",
-                }}
-              />
-            </RotatingCard>
-          </Grid>
           <Grid item xs={12} lg={7} sx={{ ml: "auto" }}>
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
@@ -95,6 +69,32 @@ function Information() {
                 />
               </Grid>
             </Grid>
+          </Grid>
+          <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
+            <RotatingCard>
+              <RotatingCardFront
+                image={bgFront}
+                icon="touch_app"
+                title={
+                  <>
+                    Feel the
+                    <br />
+                    Material Kit
+                  </>
+                }
+                description="All the MUI components that you need in a development have been re-design with the new look."
+              />
+              <RotatingCardBack
+                image={bgBack}
+                title="Discover More"
+                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                action={{
+                  type: "internal",
+                  route: "/sections/page-sections/page-headers",
+                  label: "start with header",
+                }}
+              />
+            </RotatingCard>
           </Grid>
         </Grid>
       </Container>

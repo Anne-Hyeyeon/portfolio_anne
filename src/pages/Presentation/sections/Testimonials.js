@@ -31,6 +31,7 @@ import Slider from "react-slick";
 
 function Information() {
   const settings = {
+    fade: true,
     dots: true,
     infinite: true,
     speed: 500,

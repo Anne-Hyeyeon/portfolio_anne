@@ -30,7 +30,7 @@ import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
 import Counters from "pages/Presentation/sections/Counters";
-import Information from "pages/Presentation/sections/Information";
+import Workone from "pages/Presentation/sections/Workone";
 import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
 import Pages from "pages/Presentation/sections/Pages";
 import Testimonials from "pages/Presentation/sections/Testimonials";
@@ -110,7 +110,7 @@ function Presentation() {
         }}
       >
         <Counters />
-        <Information />
+        <Workone />
         <DesignBlocks />
         <Pages />
         <Container sx={{ mt: 6 }}>

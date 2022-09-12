@@ -34,14 +34,32 @@ function Featuring() {
           👩🏻 Who's Hyeyeon?
         </MKTypography>
         <Grid container justifyContent="center" sx={{ textAlign: "center" }}>
-          <Grid item xs={12} md={3}>
+          <Grid
+            item
+            xs={12}
+            md={3}
+            sx={{
+              "&:hover": {
+                transform: "scale(1.1)",
+              },
+            }}
+          >
             <DefaultInfoCard icon="school" title="Education" direction="center" />
             <MKTypography variant="body2" color="text" textAlign="center">
               경희대학교 한국어학과, 국제학과
               <br /> 2011.03 ~ 2016.02
             </MKTypography>
           </Grid>
-          <Grid item xs={12} md={3}>
+          <Grid
+            item
+            xs={12}
+            md={3}
+            sx={{
+              "&:hover": {
+                transform: "scale(1.1)",
+              },
+            }}
+          >
             <DefaultInfoCard icon="public" title="Language Skills" direction="center" />
             <MKTypography variant="body2" color="text">
               영어 - 상
@@ -53,7 +71,16 @@ function Featuring() {
               (음독, 간단한 생활회화 가능)
             </MKTypography>
           </Grid>
-          <Grid item xs={12} md={3}>
+          <Grid
+            item
+            xs={12}
+            md={3}
+            sx={{
+              "&:hover": {
+                transform: "scale(1.1)",
+              },
+            }}
+          >
             <DefaultInfoCard icon="accessibility" title="Hobbies" direction="center" />
             <MKTypography variant="body2" color="text" textAlign="center">
               👩‍💻 블로그 관리
