@@ -16,147 +16,77 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// @mui material components
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
-import Divider from "@mui/material/Divider";
-import { Card, CardContent, CardMedia, CardActionArea } from "@mui/material";
 
-// Material Kit 2 React components
-import MKBox from "components/MKBox";
-import MKTypography from "components/MKTypography";
 
-// Slick
-import Slider from "react-slick";
+import React from 'react';
+import { Container, Link } from '@mui/material';
+import MKBox from 'components/MKBox';
+import MenuBookTwoToneIcon from '@mui/icons-material/MenuBookTwoTone';
+import MKTypography from 'components/MKTypography';
 
-function Information() {
-  const settings = {
-    fade: true,
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+function Testimonials() {
   return (
     <MKBox component="section" py={15} bgColor="#fff">
-      <Container>
-        <Grid
-          container
-          item
-          xs={12}
-          lg={6}
-          justifyContent="center"
-          sx={{ mx: "auto", textAlign: "center" }}
+         <Container maxWidth="lg">
+            <MKTypography
+            variant="h2"
+            sx={{
+                fontFamily:'Nanum Myeongjo',
+                textAlign: 'center',
+                fontSize: 30
+
+            }}>     
+        So The last will be first <br />
+        </MKTypography>
+        <MKTypography
+        sx={{
+                fontFamily:'Nanum Myeongjo',
+                textAlign: 'center',
+                fontSize: 15,
+                mb:5
+            }}
         >
-          <MKTypography variant="h2">👍 Hyeyeon's Strong Points</MKTypography>
-          <MKTypography variant="body1" color="text" mb={10} mt={2}>
-            많고 많은 신입 개발자 중에서, 왜 반드시 김혜연이어야 할까요?
-          </MKTypography>
-        </Grid>
-        <MKBox
-          width="60%"
-          container
-          justifyContent="center"
-          sx={{ mx: "auto", }}
-        >
-          <Slider {...settings}>
-            <div>
-            <Card>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image="/static/images/cards/contemplative-reptile.jpg"
-                  alt="green iguana"
-                />
-                <CardContent>
-                  <MKTypography gutterBottom variant="h5" component="div">
-                    Lizard
-                  </MKTypography>
-                  <MKTypography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                    species, ranging across all continents except Antarctica
-                  </MKTypography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-            </div>
-            <div>
-            <Card>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image="/static/images/cards/contemplative-reptile.jpg"
-                  alt="green iguana"
-                />
-                <CardContent>
-                  <MKTypography gutterBottom variant="h5" component="div">
-                    Lizard
-                  </MKTypography>
-                  <MKTypography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                    species, ranging across all continents except Antarctica
-                  </MKTypography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-            </div>
-            <div>
-            <Card>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image="/static/images/cards/contemplative-reptile.jpg"
-                  alt="green iguana"
-                />
-                <CardContent>
-                  <MKTypography gutterBottom variant="h5" component="div">
-                    Lizard
-                  </MKTypography>
-                  <MKTypography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                    species, ranging across all continents except Antarctica
-                  </MKTypography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-            </div>
-          </Slider>
-        </MKBox>
-        {/* <Grid container spacing={3} sx={{ mt: 3 }}>
-          <Grid item xs={12} md={6} lg={4}>
-            <DefaultReviewCard
-              name="Nick Willever"
-              date="1 day ago"
-              review="This is an excellent product, the documentation is excellent and helped me get things done more efficiently."
-              rating={5}
-            />
-          </Grid>
-          <Grid item xs={12} md={6} lg={4}>
-            <DefaultReviewCard
-              color="info"
-              name="Shailesh Kushwaha"
-              date="1 week ago"
-              review="I found solution to all my design needs from Creative Tim. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!"
-              rating={5}
-            />
-          </Grid>
-          <Grid item xs={12} md={6} lg={4}>
-            <DefaultReviewCard
-              name="Samuel Kamuli"
-              date="3 weeks ago"
-              review="Great product. Helped me cut the time to set up a site. I used the components within instead of starting from scratch. I highly recommend for developers who want to spend more time on the backend!."
-              rating={5}
-            />
-          </Grid> */}
-        {/* </Grid> */}
-        <Divider sx={{ my: 6 }} />
-      </Container>
+            <MenuBookTwoToneIcon fontSize="small" sx={{ mr:1 }} />
+            Matthew 20:16
+        </MKTypography> 
+        <MKTypography
+            variant="body2" 
+            sx={{
+                textAlign: 'center',
+
+            }}>     
+        비전공자로서, 개발 공부를 한 시간은 상대적으로 적을 수 있습니다. <br />그러나 새로 시작하는 사람만이 가질 수 있는 열정과 호기심은 절대로 모자라지 않습니다. <br /> 나중 된 자가 먼저 되는 날까지, 변하지 않는 성실함과 끈기로 앞으로 나아가가겠습니다.
+        </MKTypography>
+        <MKTypography
+            variant="body2" 
+            mt={5}
+            sx={{
+                textAlign: 'center',
+
+            }}>     
+        <Link underline="hover" href="mailto:khy2106@naver.com">✉️ khy2106@naver.com</Link>
+        </MKTypography>
+        <MKTypography
+            variant="body2" 
+            mt={1}
+            sx={{
+                textAlign: 'center',
+
+            }}>     
+        <Link underline="hover" href="https://github.com/Anne-Hyeyeon">🖥 https://github.com/Anne-Hyeyeon</Link>
+        </MKTypography>
+        <MKTypography
+            variant="body2" 
+            mt={1}
+            sx={{
+                textAlign: 'center',
+
+            }}>     
+        <Link underline="hover" href="https://blog.naver.com/khy2106">📝 https://blog.naver.com/khy2106</Link>
+        </MKTypography>
+    </Container>
     </MKBox>
   );
 }
 
-export default Information;
+export default Testimonials;

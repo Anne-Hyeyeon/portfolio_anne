@@ -26,48 +26,51 @@ export default [
   {
     image: page1,
     name: "🐶 신촌 코리아 IT아카데미 팀프로젝트 - 애견인 커뮤니티 Withdog",
-    route: "/pages/landing-pages/about-us",
+    route: "https://github.com/Anne-Hyeyeon/withdog_teamproject_KoreaIT",
     description: (
       <Stack direction="row" alignItems="flex-end" spacing={0.5}>
         <MKBadge badgeContent="#React" variant="contained" color="secondary" container />
+        <MKBadge badgeContent="#Firebase" variant="contained" color="secondary" container />
         <MKBadge badgeContent="#Github" variant="contained" color="secondary" container />
-        <MKBadge badgeContent="#CRUD" variant="contained" color="secondary" container />
+        <br />
+        <MKBadge badgeContent="#Rest API" variant="contained" color="secondary" container />
       </Stack>
     ),
   },
   {
     image: page2,
     name: "🌴 바닐라 자바스크립트로만 만든 Chrome App - Momentum",
-    route: "/pages/landing-pages/contact-us",
+    route: "https://github.com/Anne-Hyeyeon/Nomadcoders_momentum",
     description: (
       <Stack direction="row" alignItems="flex-end" spacing={0.5}>
-        <MKBadge badgeContent="#React" variant="contained" color="secondary" container />
-        <MKBadge badgeContent="#Github" variant="contained" color="secondary" container />
-        <MKBadge badgeContent="#CRUD" variant="contained" color="secondary" container />
+        <MKBadge badgeContent="#Vanila JS" variant="contained" color="secondary" container />
+        <MKBadge badgeContent="#HTML" variant="contained" color="secondary" container />
+        <MKBadge badgeContent="#CSS" variant="contained" color="secondary" container />
+        <MKBadge badgeContent="#Rest API" variant="contained" color="secondary" container />
       </Stack>
     ),
   },
   {
     image: page3,
     name: "🤩 직접 만든 포트폴리오 웹페이지",
-    route: "/pages/authentication/sign-in",
+    route: "https://github.com/Anne-Hyeyeon/portfolio_anne",
     description: (
       <Stack direction="row" alignItems="flex-end" spacing={0.5}>
         <MKBadge badgeContent="#React" variant="contained" color="secondary" container />
-        <MKBadge badgeContent="#Github" variant="contained" color="secondary" container />
-        <MKBadge badgeContent="#CRUD" variant="contained" color="secondary" container />
+        <MKBadge badgeContent="#Material UI" variant="contained" color="secondary" container />
+        <MKBadge badgeContent="#Eslint" variant="contained" color="secondary" container />
+        <MKBadge badgeContent="#Prettier" variant="contained" color="secondary" container />
       </Stack>
     ),
   },
   {
     image: page4,
     name: "👩‍❤️‍👨부트스트랩 실습으로 만든 커플 다이어리 - Josuanne",
-    route: "/pages/landing-pages/author",
+    route: "https://github.com/Anne-Hyeyeon/josuanne_couplediary",
     description: (
       <Stack direction="row" alignItems="flex-end" spacing={0.5}>
         <MKBadge badgeContent="#React" variant="contained" color="secondary" container />
-        <MKBadge badgeContent="#Github" variant="contained" color="secondary" container />
-        <MKBadge badgeContent="#CRUD" variant="contained" color="secondary" container />
+        <MKBadge badgeContent="#Material UI" variant="contained" color="secondary" container />
       </Stack>
     ),
   },

@@ -29,9 +29,12 @@ function Featuring() {
   return (
     <MKBox bgColor="#fff" component="section" py={15}>
       <Container>
-        <MKTypography textAlign="center" variant="h2" mb={4}>
+        <MKTypography textAlign="center" variant="h2" mb={2}>
           {" "}
           👩🏻 Who's Hyeyeon?
+        </MKTypography>
+        <MKTypography variant="body1" color="text" mb={10} textAlign="center">
+          아이스 브레이킹! 작은 것부터 천천히 알아가요.
         </MKTypography>
         <Grid container justifyContent="center" sx={{ textAlign: "center" }}>
           <Grid
@@ -83,9 +86,9 @@ function Featuring() {
           >
             <DefaultInfoCard icon="accessibility" title="Hobbies" direction="center" />
             <MKTypography variant="body2" color="text" textAlign="center">
-              👩‍💻 블로그 관리
+              👩‍💻 블로그 관리, 생각이 담긴 에세이 쓰기
               <br />
-              💻 자막 없이 외국 유튜브 보기
+              💻 자막 없이 외국 유튜브 보기 시도
               <br />
               👟 에어로빅, 점핑 운동하기
             </MKTypography>

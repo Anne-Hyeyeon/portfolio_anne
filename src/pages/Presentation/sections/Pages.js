@@ -15,7 +15,6 @@ Coded by www.creative-tim.com
 */
 
 // react-router-dom components
-import { Link } from "react-router-dom";
 
 // @mui material components
 import Container from "@mui/material/Container";
@@ -31,11 +30,14 @@ import ExampleCard from "pages/Presentation/components/ExampleCard";
 // Data
 import data from "pages/Presentation/sections/data/pagesData";
 
+import { Link } from "@mui/material";
+
 function Pages() {
+  // eslint-disable-next-line no-unused-vars
   const renderData = data.map(({ image, name, route, description }) => (
     <Grid item xs={12} md={6} sx={{ mb: { xs: 7, lg: 10 } }} key={name}>
-      <Link to={route}>
-        <ExampleCard image={image} name={name} display="grid" minHeight="auto" />
+      <Link target="_blank" href={route}>
+        <ExampleCard image={image} name={name} display="grid" minHeight="auto" d />
       </Link>
       <MKTypography variant="body2" mt={1}>
         {description}
@@ -55,8 +57,11 @@ function Pages() {
           alignItems="center"
           sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
         >
-          <MKTypography variant="h2" fontWeight="bold" mb={1} mt={-3}>
+          <MKTypography variant="h2" fontWeight="bold" mb={2} mt={-3}>
             💻 Hyeyeon's Projects
+          </MKTypography>
+          <MKTypography variant="body1" color="text" mb={3}>
+            협업 또는 혼자서 진행한 프론트엔드 개발 프로젝트들입니다.
           </MKTypography>
         </Grid>
       </Container>
