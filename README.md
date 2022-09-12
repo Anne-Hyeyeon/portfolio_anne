@@ -1,207 +1,75 @@
-# [Material Kit 2 React](http://demos.creative-tim.com/material-kit-react/#/?ref=readme-mkr) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https://www.creative-tim.com/product/material-kit-react&text=Check%20Material%20kit%20React%20made%20by%20@CreativeTim%20#webdesign%20#kit%20#materialdesign%20#react%20https://www.creative-tim.com/product/material-kit-react)
+<br>
 
-![version](https://img.shields.io/badge/version-2.0.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-kit-react.svg)](https://github.com/creativetimofficial/material-kit-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-kit-react.svg)](https://github.com/creativetimofficial/material-kit-react/issues?q=is%3Aissue+is%3Aclosed)
+# 💕 웹 포트폴리오 (by Anne)
+프론트엔드 개발자로서의 첫 걸음! 포트폴리오 웹페이지
+<br>
 
-![Image](https://s3.amazonaws.com/creativetim_bucket/products/83/original/material-kit-2-react.jpg)
+완성작 보러가기 🔍
 
-Material Kit 2 React is our newest free MUI Design System based on React. Its amazing design is inspired by Material Design and contains all the components you need for your development. If you’re a developer looking to create good-looking websites, rich with features, and highly customisable, here is your match.
+<h3> </h3>
+<br />
 
-_Fully Coded Elements_
-Material Kit 2 React is built with over 40 frontend individual elements, like buttons, inputs, navbars, alerts or cards, giving you the freedom of choosing and combining. All components can take variations in color, which you can easily modify using MUI styled() API and sx prop. You will save a lot of time going from prototyping to full-functional code because all elements are implemented.
+## ✔️ 프로젝트 개요
+### `진행 동기` 
+- 원래는 9월까지 노마드코더 마스터클래스 강의를 완강하려고 했다. 
+- 하지만 주변 개발자 분들이 '신입 개발자는 모든 게 완벽하려는 욕심부터 내려놓아야 한다.'라는 조언을 많이 해주셨다. 난 아직 준비가 안 된 것 같은데... 😞
+- 그러나... 알고 있었다. 준비가 안 된 것 같다고 죽을 때까지 인강만 들을 수 없다는 사실을.
+- 리액트 + 스타일 컴포넌트와 타입스크립트 기초 공부까지는 완료한 상태. 이 상황에서 강의를 완강할지, 어떻게든 준비해서 입사지원을 시작할지 고민이 되었다.
+- 그러던 도중 선배 개발자님께서 입사 지원의 기회를 주셨다! 이건 포트폴리오를 어떻게든 만들어보라는 하나님의 계시 🤩
+- 하지만 주어진 기간은 단 3일... 시간이 없는 만큼 노션으로 포트폴리오를 만들어볼까? 고민도 했지만...
+- <h4> 마!!! 프론트엔드 개발자인데 포트폴리오 웹페이지 정도는 스스로 만들어야지!!! </h4> 라는 생각에 제작 강행 👍 후회는 없다.
 
-This free MUI & React template is coming with pre-built design blocks, so the development process is seamless,
-switching from our pages to the real website is very easy to be done.
-View all components here. (https://www.creative-tim.com/learning-lab/react/alerts/material-kit/)
 
-_Documentation built by Developers_
-Each element is well presented in very complex documentation.
-You can read more about the documentation here (https://www.creative-tim.com/learning-lab/react/overview/material-kit/).
+### `진행 기간`
+2022.09.10 ~ 2022.09.13 (해피추석)
 
-_Example Pages_
-If you want to get inspiration or just show something directly to your clients, you can jump-start your development with our pre-built example pages. You will be able to quickly set up the basic structure for your web project.
+### `작업자`
+김혜연😜
 
-View example pages here. (https://demos.creative-tim.com/material-kit-react/#/pages/landing-pages/about-us)
+### `사용 기술 및 개발환경`
+- 개발환경 : PC (Mac)
+- 개발도구 : VSC
+- 개발언어 및 라이브러리, 프레임워크 : HTML, CSS, javascript, REACT, Material UI
 
-**HELPFUL LINKS**
+<br />
 
-- View [Github Repository](https://github.com/creativetimofficial/material-kit-react)
-- Check [FAQ Page](https://www.creative-tim.com/faq)
+## ✔️ Point
+🌸 김혜연을 궁금하게 만드는, 깔끔한 포트폴리오를 만드는 게 목표 🌸
 
-#### Special thanks
+<br />
 
-During the development of this dashboard, we have used many existing resources from awesome developers. We want to thank them for providing their tools open source:
+### `컨셉, 방향성`
+- 회색, 네이비색 조합으로 `깔끔한` 포트폴리오 완성
+- `MUI` (내가 가장 좋아하는 디자인 라이브러리) 컴포넌트 최대한 활용하기
+- But 템플릿을 그대로 이용하면, 정적인 홈페이지가 되므로 `동적인 효과`를 과하지 않은 선에서 넣어본다.
+- 프론트엔드 개발자로서의 역량(`디자인 감각`, `배우고자 하는 자세`, `문제 해결 능력`) 이 잘 드러나게끔 만들기
+- 비전공자에다가 개발 업무 경험이 없지만 `안 데려가면 후회할` 나라는 인재를, 최대한 돋보일 수 있는 포트폴리오 만들기 👊 
 
-- [MUI](https://mui.com/) - The React UI library for faster and easier web development.
-- [React Flatpickr](https://github.com/haoxins/react-flatpickr) - Useful library used to select date.
-- [React Copy to Clipboard](https://github.com/nkbt/react-copy-to-clipboard) - Useful library used for copying data to the clipboard.
-- [React Countup](https://github.com/glennreyes/react-countup) - A lightweight React component that can be used to quickly create animations that display numerical data in a more interesting way.
-- [React Syntax Highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter) - Syntax highlighting component for react with prismjs or highlightjs ast using inline styles.
-- [ChromaJS](https://gka.github.io/chroma.js/) - A small-ish zero-dependency JavaScript library for all kinds of color conversions and color scales.
+<br />
 
-Let us know your thoughts below. And good luck with development!
+### `사용한 라이브러리`
+- React Slick (strong point)
+- React Reveal (스크롤 효과)
+- React scroll section (클릭시 스크롤 이동)
+- prop-types (타입 체크)
+- material UI (디자인, 컴포넌트, 테마)
 
-## Table of Contents
+## ✔️ 추가, 보완할 부분
+- (언제까지 유행할 진 모르겠지만) 요즘 `One Page` 디자인 사이트가 인기다. 해당 방식으로, 딱 보기만 해도 너무 예쁘다는 감탄사가 튀어나올법한 사이트를 만들고 싶다!
+- 개발자로서 진행한 프로젝트를 많이 못 넣은 게 아쉽다. 앞으로 강의에서 진행한 프로젝트라도 웹으로 꼭 배포해보도록 하자
+- `React Hooks`를 이용한 기능이 생각보다 많지 않다... 꼭 넣어야 한다는 법칙같은 건 없지만 복습할 수 없어서 아쉬웠다. 너무 라이브러리에 의존했나...? 싶다가도, 라이브러리 잘 쓰는 것도 능력이지! 이런 (오만한) 생각도 들고... 선배 프론트 개발자님이 생기면 꼭 이 부분에 대해 여쭤보고 싶다.
 
-- [Versions](#versions)
-- [Demo](#demo)
-- [Quick Start](#quick-start)
-- [Documentation](#documentation)
-- [File Structure](#file-structure)
-- [Browser Support](#browser-support)
-- [Resources](#resources)
-- [Reporting Issues](#reporting-issues)
-- [Technical Support or Questions](#technical-support-or-questions)
-- [Licensing](#licensing)
-- [Useful Links](#useful-links)
+<br />
+<br />
 
-## Versions
+## ✔️ 사용한 기술, 프로젝트를 통해 얻은 지식
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+- 사실 포폴 사이트 구성 자체는 정말 간단해 보이지만... 심각할 정도로 많은 `문제`들에 봉착했었다.
+- 우선... 디자인 라이브러리가 현재 리액트 버전과 계속 충돌해서 오류 수정을 엄청나게 했다. (업그레이드가 얼마나 무서운(?) 건지 요즘들어 더 체감하는 중)
+- 무엇보다 `디자인`에 매우 매우 x10000 신경써야 하는, 포폴 프로젝트인 만큼 가운데 정렬과 마진 하나하나가 다 신경 쓰이는데! 생각보다 이거 맞추는 게 너무 어려웠다. 기본기의 중요성을 다시 한 번 깨닫고 눈물을...
+- 내가 몰랐던 다양한 `라이브러리`를 사용해 볼 수 있어서 좋았다. 특히 Slick, Reveal 같은 건 아주 대중적으로 사용되는 거라 미리 익혀놓으면 좋을 것 같다.
+- 내가 사용했던 Mui kit 에 `eslint`와 `prettier`가 적용되어 있어... 이 두 친구들의 무서움을 미리 맛보게 되었다. (물론 중요성도.) 부끄럽지만 이렇게 깔끔하게 코드 쓴 건 처음이다...
 
-[<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/react-logo.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-kit-react?ref=readme-mkr)
 
-| React |
-| ----- |
-
-| [![Material Kit 2 React](https://s3.amazonaws.com/creativetim_bucket/products/83/thumb/material-kit-2-react.jpg)](http://demos.creative-tim.com/material-kit-react/#/?ref=readme-mkr)
-
-## Demo
-
-- [About Us](https://demos.creative-tim.com/material-kit-react/#/pages/landing-pages/about-us?ref=readme-mkr)
-- [Contact Us](https://demos.creative-tim.com/material-kit-react/#/pages/landing-pages/contact-us?ref=readme-mkr)
-- [Author](https://demos.creative-tim.com/material-kit-react/#/pages/landing-pages/author?ref=readme-mkr)
-- [Pricing page](https://demos.creative-tim.com/material-kit-react/#/pages/authentication/sign-in?ref=readme-mkr)
-
-[View More](https://demos.creative-tim.com/material-kit-react/#/?ref=readme-mkr).
-
-## Quick start
-
-Quick start options:
-
-- Download from [Creative Tim](https://www.creative-tim.com/product/material-kit-react?ref=readme-mkr).
-
-## Terminal Commands
-
-1. Download and Install NodeJs LTS version from [NodeJs Official Page](https://nodejs.org/en/download/).
-2. Navigate to the root ./ directory of the product and run `yarn install` or `npm install` to install our local dependencies.
-
-## Documentation
-
-The documentation for the Material Dashboard is hosted at our [website](https://www.creative-tim.com/learning-lab/react/overview/material-kit/?ref=readme-mkr).
-
-### What's included
-
-Within the download you'll find the following directories and files:
-
-```
-material-kit-2-react
-    ├── public
-    │   ├── apple-icon.png
-    │   ├── favicon.png
-    │   ├── index.html
-    │   ├── manifest.json
-    │   └── robots.txt
-    ├── src
-    │   ├── assets
-    │   │   ├── images
-    │   │   ├── theme
-    │   │   │   ├── base
-    │   │   │   ├── components
-    │   │   │   ├── functions
-    │   │   └── └── index.js
-    │   ├── components
-    │   │   ├── MKAlert
-    │   │   ├── MKAvatar
-    │   │   ├── MKBadge
-    │   │   ├── MKBox
-    │   │   ├── MKButton
-    │   │   ├── MKDatePicker
-    │   │   ├── MKInput
-    │   │   ├── MKPagination
-    │   │   ├── MKrogress
-    │   │   ├── MKSocialButton
-    │   │   └── MKTypography
-    │   ├── examples
-    │   │   ├── Breadcrumbs
-    │   │   ├── Cards
-    │   │   ├── Footer
-    │   │   └── Navbars
-    │   ├── layouts
-    │   │   ├── pages
-    │   │   │    ├── authentication
-    │   │   │    ├── landing-pages
-    │   │   │    └── presentation
-    │   │   ├── sections
-    │   │   │    ├── attention-catchers
-    │   │   │    ├── components
-    │   │   │    ├── elements
-    │   │   │    ├── input-areas
-    │   │   │    ├── navigation
-    │   │   └──  └── page-sections
-    │   ├── pages
-    │   │   ├── LandingPages
-    │   │   └── Presentation
-    │   ├── App.js
-    │   ├── index.js
-    │   ├── footer.routes.js
-    │   └── routes.js
-    ├── .eslintrc.json
-    ├── .prettierrc.json
-    ├── CHANGELOG.md
-    ├── ISSUE_TEMPLATE.md
-    ├── jsconfig.json
-    ├── package.json
-    └── README.md
-```
-
-## Browser Support
-
-At present, we officially aim to support the last two versions of the following browsers:
-
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
-
-## Resources
-
-- [Live Preview](https://demos.creative-tim.com/material-kit-react/#/?ref=readme-mkr)
-- [Buy Page](https://www.creative-tim.com/product/material-kit-react?ref=readme-mkr)
-- Documentation is [here](https://www.creative-tim.com/learning-lab/react/overview/material-kit/?ref=readme-mkr)
-- [License Agreement](https://www.creative-tim.com/license?ref=readme-mkr)
-- [Support](https://www.creative-tim.com/contact-us?ref=readme-mkr)
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/ct-material-kit-react/issues)
-
-## Reporting Issues
-
-We use GitHub Issues as the official bug tracker for the Material Kit 2 React. Here are some advices for our users that want to report an issue:
-
-1. Make sure that you are using the latest version of the Material Kit 2 React. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/product/material-kit-react?ref=readme-mkr).
-2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
-3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
-
-## Technical Support or Questions
-
-If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us?ref=readme-mkr) instead of opening an issue.
-
-## Licensing
-
-- Copyright 2021 [Creative Tim](https://www.creative-tim.com?ref=readme-mkr)
-- Creative Tim [license](https://www.creative-tim.com/license?ref=readme-mkr)
-
-## Useful Links
-
-- [More products](https://www.creative-tim.com/templates?ref=readme-mkr) from Creative Tim
-
-- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
-
-- [Freebies](https://www.creative-tim.com/bootstrap-themes/free?ref=readme-mkr) from Creative Tim
-
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=readme-mkr) (earn money)
-
-##### Social Media
-
-Twitter: <https://twitter.com/CreativeTim>
-
-Facebook: <https://www.facebook.com/CreativeTim>
-
-Dribbble: <https://dribbble.com/creativetim>
-
-Google+: <https://plus.google.com/+CreativetimPage>
-
-Instagram: <https://instagram.com/creativetimofficial>
+<br />
+<br />
