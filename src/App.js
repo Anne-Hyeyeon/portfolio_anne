@@ -149,19 +149,9 @@ function AboutUs() {
                     variant="h4"
                     color="white"
                     href="https://blog.naver.com/khy2106/222766215985"
-                    mr={3}
                     pt={1}
                   >
                     <FormatBold color="white" />
-                  </MKTypography>
-                  <MKTypography
-                    component="a"
-                    target="blank"
-                    variant="body1"
-                    color="white"
-                    href="https://www.instagram.com/anne_hyeyeon/"
-                  >
-                    <i className="fab fa-instagram" />
                   </MKTypography>
                 </MKBox>
               </Grid>
@@ -172,16 +162,16 @@ function AboutUs() {
           <Profile />
         </Section>
         <Fade Top>
-          <Featuring />
+          <Pages />
+        </Fade>
+        <Fade Top>
+          <Workone />
         </Fade>
         <Fade Bottom>
           <Download />
         </Fade>
         <Fade Top>
-          <Pages />
-        </Fade>
-        <Fade Top>
-          <Workone />
+          <Featuring />
         </Fade>
         <Bounce>
           <Testimonials />

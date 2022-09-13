@@ -25,7 +25,7 @@ import MKBadge from "components/MKBadge";
 export default [
   {
     image: page1,
-    name: "🐶 신촌 코리아 IT아카데미 팀프로젝트 - 애견인 커뮤니티 Withdog",
+    name: "🐶 기획부터 디자인, 개발과 배포까지 모든 과정을 직접 진행한 - 애견인 커뮤니티 Withdog",
     route: "https://github.com/Anne-Hyeyeon/withdog_teamproject_KoreaIT",
     description: (
       <Stack direction="row" alignItems="flex-end" spacing={0.5}>

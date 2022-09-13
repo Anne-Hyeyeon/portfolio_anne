@@ -27,14 +27,11 @@ import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
 function Featuring() {
   return (
-    <MKBox bgColor="#fff" component="section" py={15}>
+    <MKBox component="section" py={15}>
       <Container>
         <MKTypography textAlign="center" variant="h2" mb={2}>
           {" "}
           👩🏻 Who's Hyeyeon?
-        </MKTypography>
-        <MKTypography variant="body1" color="text" mb={10} textAlign="center">
-          아이스 브레이킹! 작은 것부터 천천히 알아가요.
         </MKTypography>
         <Grid container justifyContent="center" sx={{ textAlign: "center" }}>
           <Grid

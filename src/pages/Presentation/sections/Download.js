@@ -24,7 +24,7 @@ import MKTypography from "components/MKTypography";
 
 function Download() {
   return (
-    <MKBox component="section" py={15}>
+    <MKBox component="section" bgColor="#fff" py={15}>
       <Grid container item xs={8} md={7} justifyContent="center" mx="auto" textAlign="center">
         <MKTypography variant="h2" mb={2}>
           📁 Hyeyeon's Tech Stack

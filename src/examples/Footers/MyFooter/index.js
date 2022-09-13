@@ -45,20 +45,11 @@ function MyFooter() {
           component="a"
           target="blank"
           variant="h1"
-          href="https://blog.naver.com/khy2106/222766215985"
+          href="https://blog.naver.com/khy2106/222766215985s"
           mr={3}
           pt={2}
         >
           <FormatBold color="dark" />
-        </MKTypography>
-        <MKTypography
-          component="a"
-          target="blank"
-          variant="h2"
-          color="dark"
-          href="https://www.instagram.com/anne_hyeyeon/"
-        >
-          <i className="fab fa-instagram" />
         </MKTypography>
       </MKBox>
       <Box
