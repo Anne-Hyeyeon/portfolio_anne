@@ -55,7 +55,7 @@ function Testimonials() {
                 textAlign: 'center',
 
             }}>     
-        비전공자로서, 개발 공부를 한 시간은 상대적으로 적을 수 있습니다. <br />그러나 새로 시작하는 사람만이 가질 수 있는 열정과 호기심은 절대로 모자라지 않습니다. <br /> 나중 된 자가 먼저 되는 날까지, 변하지 않는 성실함과 끈기로 앞으로 나아가가겠습니다.
+        비전공자로서, 개발 업무를 경험해본 시간은 상대적으로 적을 수 있습니다. <br /> 하지만 신입 개발자로서의 열정만큼은 업무를 성실히 진행함에 있어 절대 모자라지 않습니다. <br /> 나중 된 자가 먼저 되는 날까지, 변하지 않는 성실함과 끈기로 앞으로 나아가가겠습니다.
         </MKTypography>
         <MKTypography
             variant="body2" 
@@ -82,7 +82,7 @@ function Testimonials() {
                 textAlign: 'center',
 
             }}>     
-        <Link underline="hover" href="https://blog.naver.com/khy2106">📝 https://blog.naver.com/khy2106</Link>
+        <Link underline="hover" href="               <Link href=https://blog.naver.com/khy2106/222766215985">📝 https://blog.naver.com/khy2106</Link>
         </MKTypography>
     </Container>
     </MKBox>

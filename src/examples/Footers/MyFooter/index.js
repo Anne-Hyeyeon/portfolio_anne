@@ -45,7 +45,7 @@ function MyFooter() {
           component="a"
           target="blank"
           variant="h1"
-          href="https://blog.naver.com/khy2106"
+          href="https://blog.naver.com/khy2106/222766215985"
           mr={3}
           pt={2}
         >

@@ -117,7 +117,7 @@ function AboutUs() {
                     smartBackspace
                   />
                   <MKTypography variant="body1" mt={1} color="white" opacity={0.8}>
-                    프론트엔드 개발자 김혜연의 포트폴리오입니다.
+                    프론트엔드 개발자 김혜연입니다.
                   </MKTypography>
                 </MKTypography>
                 <StaticMenu />
@@ -148,7 +148,7 @@ function AboutUs() {
                     target="blank"
                     variant="h4"
                     color="white"
-                    href="https://blog.naver.com/khy2106"
+                    href="https://blog.naver.com/khy2106/222766215985"
                     mr={3}
                     pt={1}
                   >
