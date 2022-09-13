@@ -76,17 +76,20 @@ function Profile() {
                 <MKTypography variant="h3">Hyeyeon Kim 🥰</MKTypography>
               </MKBox>
               <MKBox>
-              <MKTypography variant="body2" mb={2}>
+              <MKTypography variant="h6" mb={2}>
                   1992년 12월 29일생
                 </MKTypography>
                 <MKTypography variant="body2">
-                  ・ 2018.11 ~ 유통회사 온라인 폐쇄몰 MD로 근무 중
+                  ・ 2015.09 ~ 2018.05 비타에듀 교육그룹 학습, 입시컨설턴트
+                </MKTypography>
+                <MKTypography variant="body2">
+                  ・ 2018.11 ~ (주)프리윌커뮤니케이션, 직무 : 영업지원, MD
                 </MKTypography>
                 <MKTypography variant="body2">
                 ・ 2022.02 ~ 2022.06 신촌 코리아 IT 아카데미 프론트엔드 과정 수료
                 </MKTypography>
                   <MKTypography mt={3} variant="h4">
-📔 이야기 더 보기 
+📔 이야기 더 보기 (click) ► 
 <ExpandMore
           expand={expanded}
           onClick={handleExpandClick}

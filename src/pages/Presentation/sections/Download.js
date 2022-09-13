@@ -25,13 +25,13 @@ import MKTypography from "components/MKTypography";
 function Download() {
   return (
     <MKBox component="section" bgColor="#fff" py={15}>
+      <MKTypography variant="h2" mb={2} textAlign="center">
+        📁 Hyeyeon's Tech Stack
+      </MKTypography>
+      <MKTypography variant="body1" color="text" mb={10} textAlign="center">
+        학원 과정과 인터넷 강의를 통해 배운 후, 실제 프로젝트에 적용시켜 본 기술 스택들입니다.
+      </MKTypography>
       <Grid container item xs={8} md={7} justifyContent="center" mx="auto" textAlign="center">
-        <MKTypography variant="h2" mb={2}>
-          📁 Hyeyeon's Tech Stack
-        </MKTypography>
-        <MKTypography variant="body1" color="text" mb={10}>
-          학원 과정과 인터넷 강의를 통해 배운 후, 실제 프로젝트에 적용시켜 본 기술 스택들입니다.
-        </MKTypography>
         <Grid container spacing={3} justifyContent="center">
           <Grid item xs={4} lg={2}>
             <Tooltip

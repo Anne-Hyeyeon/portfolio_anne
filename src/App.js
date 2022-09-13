@@ -148,7 +148,7 @@ function AboutUs() {
                     target="blank"
                     variant="h4"
                     color="white"
-                    href="https://blog.naver.com/khy2106/222766215985"
+                    href="https://blog.naver.com/khy2106/"
                     pt={1}
                   >
                     <FormatBold color="white" />
