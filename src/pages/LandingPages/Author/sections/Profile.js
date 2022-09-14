@@ -80,10 +80,10 @@ function Profile() {
                   1992년 12월 29일생
                 </MKTypography>
                 <MKTypography variant="body2">
-                  ・ 2015.09 ~ 2018.05 비타에듀 교육그룹 학습, 입시컨설턴트
+                  ・ 2015.09 ~ 2018.05 비타에듀 교육그룹 - 학습, 입시컨설턴트
                 </MKTypography>
                 <MKTypography variant="body2">
-                  ・ 2018.11 ~ (주)프리윌커뮤니케이션, 직무 : 영업지원, MD
+                  ・ 2018.11 ~ (주)프리윌커뮤니케이션 - 스타벅스, 필립스 B2B 폐쇄몰 MD
                 </MKTypography>
                 <MKTypography variant="body2">
                 ・ 2022.02 ~ 2022.06 신촌 코리아 IT 아카데미 프론트엔드 과정 수료
