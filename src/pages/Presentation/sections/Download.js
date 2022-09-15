@@ -77,7 +77,7 @@ function Download() {
           </Grid>
           <Grid item xs={4} lg={2}>
             <Tooltip
-              title="ES6 Javascript"
+              title="Javascript"
               componentsProps={{
                 tooltip: {
                   sx: {
