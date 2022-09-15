@@ -5,7 +5,7 @@
   "author": "Creative Tim",
   "license": "See license in https://www.creative-tim.com/license",
   "description": "React version of Material Kit 2 by Creative Tim",
-  "homepage": "https://demos.creative-tim.com/material-kit-react/#/",
+  "homepage": "https://anne-hyeyeon.github.io/portfolio_anne/",
   "bugs": {
     "url": "https://github.com/creativetimofficial/ct-material-kit-react/issues"
   },
@@ -37,7 +37,7 @@
     "react-flatpickr": "3.10.7",
     "react-reveal": "^1.2.2",
     "react-router-dom": "6.0.2",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^2.1.8",
     "react-scroll-section": "^3.1.0",
     "react-slick": "^0.29.0",
     "react-syntax-highlighter": "15.4.5",
@@ -54,7 +54,6 @@
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://anne-hyeyeon.github.io/portfolio_anne/",
   "eslintConfig": {
     "extends": [
       "react-app",
