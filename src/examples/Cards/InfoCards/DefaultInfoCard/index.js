@@ -23,7 +23,7 @@ import Icon from "@mui/material/Icon";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-function DefaultInfoCard({ color, icon, title, direction, small }) {
+function DefaultInfoCard({ color, icon, title, direction }) {
   return (
     <MKBox lineHeight={1} p={direction === "center" ? 2 : 0} textAlign={direction}>
       {typeof icon === "string" ? (
@@ -48,15 +48,6 @@ function DefaultInfoCard({ color, icon, title, direction, small }) {
       >
         {title}
       </MKTypography>
-      <MKTypography
-        display="block"
-        variant={small ? "button" : "body2"}
-        color="text"
-        pr={direction === "left" ? 6 : 0}
-        pl={direction === "right" ? 6 : 0}
-      >
-        {" "}
-      </MKTypography>
     </MKBox>
   );
 }
@@ -65,7 +56,6 @@ function DefaultInfoCard({ color, icon, title, direction, small }) {
 DefaultInfoCard.defaultProps = {
   color: "info",
   direction: "left",
-  small: false,
 };
 
 // Typechecking props for the DefaultInfoCard
@@ -83,7 +73,6 @@ DefaultInfoCard.propTypes = {
   icon: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
   direction: PropTypes.oneOf(["left", "right", "center"]),
-  small: PropTypes.bool,
 };
 
 export default DefaultInfoCard;

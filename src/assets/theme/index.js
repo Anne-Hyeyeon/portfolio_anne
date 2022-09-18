@@ -45,26 +45,14 @@ import input from "assets/theme/components/form/input";
 import inputLabel from "assets/theme/components/form/inputLabel";
 import inputOutlined from "assets/theme/components/form/inputOutlined";
 import textField from "assets/theme/components/form/textField";
-import menu from "assets/theme/components/menu";
-import menuItem from "assets/theme/components/menu/menuItem";
 import switchButton from "assets/theme/components/form/switchButton";
 import divider from "assets/theme/components/divider";
-import tableContainer from "assets/theme/components/table/tableContainer";
-import tableHead from "assets/theme/components/table/tableHead";
-import tableCell from "assets/theme/components/table/tableCell";
 import linearProgress from "assets/theme/components/linearProgress";
 import breadcrumbs from "assets/theme/components/breadcrumbs";
 import slider from "assets/theme/components/slider";
 import avatar from "assets/theme/components/avatar";
 import tooltip from "assets/theme/components/tooltip";
 import appBar from "assets/theme/components/appBar";
-import tabs from "assets/theme/components/tabs";
-import tab from "assets/theme/components/tabs/tab";
-import stepper from "assets/theme/components/stepper";
-import step from "assets/theme/components/stepper/step";
-import stepConnector from "assets/theme/components/stepper/stepConnector";
-import stepLabel from "assets/theme/components/stepper/stepLabel";
-import stepIcon from "assets/theme/components/stepper/stepIcon";
 import select from "assets/theme/components/form/select";
 import formControlLabel from "assets/theme/components/form/formControlLabel";
 import formLabel from "assets/theme/components/form/formLabel";
@@ -78,11 +66,6 @@ import buttonBase from "assets/theme/components/buttonBase";
 import icon from "assets/theme/components/icon";
 import svgIcon from "assets/theme/components/svgIcon";
 import link from "assets/theme/components/link";
-import dialog from "assets/theme/components/dialog";
-import dialogTitle from "assets/theme/components/dialog/dialogTitle";
-import dialogContent from "assets/theme/components/dialog/dialogContent";
-import dialogContentText from "assets/theme/components/dialog/dialogContentText";
-import dialogActions from "assets/theme/components/dialog/dialogActions";
 
 export default createTheme({
   breakpoints: { ...breakpoints },
@@ -118,26 +101,14 @@ export default createTheme({
     MuiInputLabel: { ...inputLabel },
     MuiOutlinedInput: { ...inputOutlined },
     MuiTextField: { ...textField },
-    MuiMenu: { ...menu },
-    MuiMenuItem: { ...menuItem },
     MuiSwitch: { ...switchButton },
     MuiDivider: { ...divider },
-    MuiTableContainer: { ...tableContainer },
-    MuiTableHead: { ...tableHead },
-    MuiTableCell: { ...tableCell },
     MuiLinearProgress: { ...linearProgress },
     MuiBreadcrumbs: { ...breadcrumbs },
     MuiSlider: { ...slider },
     MuiAvatar: { ...avatar },
     MuiTooltip: { ...tooltip },
     MuiAppBar: { ...appBar },
-    MuiTabs: { ...tabs },
-    MuiTab: { ...tab },
-    MuiStepper: { ...stepper },
-    MuiStep: { ...step },
-    MuiStepConnector: { ...stepConnector },
-    MuiStepLabel: { ...stepLabel },
-    MuiStepIcon: { ...stepIcon },
     MuiSelect: { ...select },
     MuiFormControlLabel: { ...formControlLabel },
     MuiFormLabel: { ...formLabel },
@@ -149,10 +120,5 @@ export default createTheme({
     MuiIcon: { ...icon },
     MuiSvgIcon: { ...svgIcon },
     MuiLink: { ...link },
-    MuiDialog: { ...dialog },
-    MuiDialogTitle: { ...dialogTitle },
-    MuiDialogContent: { ...dialogContent },
-    MuiDialogContentText: { ...dialogContentText },
-    MuiDialogActions: { ...dialogActions },
   },
 });

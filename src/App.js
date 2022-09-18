@@ -24,27 +24,24 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKButton from "components/MKButton";
 
-// About Us page sections
-import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
-import Download from "pages/Presentation/sections/Download";
-import Testimonials from "pages/Presentation/sections/Testimonials";
+// pages
+import WhoIsHer from "pages/WhoIsHer";
+import Stacks from "pages/Stacks";
+import BottomRefer from "pages/BottomRefer";
+import StrongPoints from "pages/StrongPoints";
+import Projects from "pages/Projects";
+import Profile from "pages/Profile";
+import MyFooter from "examples/Footers/MyFooter";
 
 // Images
 import bgImage from "assets/images/bg-about-us.jpg";
-import Pages from "pages/Presentation/sections/Pages";
-// eslint-disable-next-line import/order
-
 import { Fade, Bounce } from "react-reveal";
 import { FormatBold } from "@mui/icons-material";
-import Workone from "pages/Presentation/sections/Workone";
 import { Typing } from "typing-effect-reactjs";
-// import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 
 // Scroll
 import React from "react";
 import { ScrollingProvider, useScrollSection, Section } from "react-scroll-section";
-import MyFooter from "examples/Footers/MyFooter";
-import Profile from "pages/LandingPages/Author/sections/Profile";
 
 function AboutUs() {
   const StaticMenu = () => {
@@ -162,19 +159,19 @@ function AboutUs() {
           <Profile />
         </Section>
         <Fade Top>
-          <Pages />
+          <Projects />
         </Fade>
         <Fade Top>
-          <Workone />
+          <StrongPoints />
         </Fade>
         <Fade Bottom>
-          <Download />
+          <Stacks />
         </Fade>
         <Fade Top>
-          <Featuring />
+          <WhoIsHer />
         </Fade>
         <Bounce>
-          <Testimonials />
+          <BottomRefer />
         </Bounce>
         <MKBox pt={6} px={1} mt={6}>
           <MyFooter />
