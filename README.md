@@ -66,12 +66,31 @@
 <ExampleCard image={image} name={name} display="grid" minHeight="auto" d />
 ```
 이렇게 맨 뒤에 d라는 오타가 들어가 attr로 인식되고 있는 걸 확인함!
+
 4) 삭제..문제 해결
 
-## ✔️ 추가, 보완할 부분
-- (언제까지 유행할 진 모르겠지만) 요즘 `One Page` 디자인 사이트가 인기다. 해당 방식으로, 딱 보기만 해도 너무 예쁘다는 감탄사가 튀어나올법한 사이트를 만들고 싶다! (한 1년 뒤엔 어떤 디자인이 유행하고 있을까? 핵궁금 🤔)
-- 개발자로서 진행한 프로젝트를 많이 못 넣은 게 아쉽다. 앞으로 강의에서 진행한 프로젝트라도 웹으로 꼭 배포해보도록 하자
-- `React Hooks`를 이용한 기능이 생각보다 많지 않다... 꼭 넣어야 한다는 법칙같은 건 없지만 복습할 수 없어서 아쉬웠다. 너무 라이브러리에 의존했나...? 싶다가도, 라이브러리 잘 쓰는 것도 능력이지! 이런 (오만한) 생각도 들고... 선배 프론트 개발자님이 생기면 꼭 이 부분에 대해 여쭤보고 싶다.
+### `오류 2.` validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
+- div는 p의 자식 요소로 들어갈 수 없음
+  
+at Stack (http://localhost:3000/portfolio_anne/static/js/vendors~main.chunk.js:283849:91)
+at p
+at Typography (http://localhost:3000/portfolio_anne/static/js/vendors~main.chunk.js:293632:91)
+  
+
+1) 처음에 이거 보고 Stacks.js에서 오류가 일어났나? 했는데.. MUI의 Stack 컴포넌트였다. (바보)
+2) 해당 오류가 일어난 Projects 파일로 이동!
+3)
+```js
+<MKTypography variant="body2" mt={1}>
+  {description}
+</MKTypography>
+```
+  
+해당 파일에서 stack 컴포넌트 쓰고 있는 부분은 이 부분 뿐인데...아니나 다를까 저 부분을 삭제해보니 해당 오류 안 일어남!
+  
+ data파일의 description 정보 안에 있는 Stack 컴포넌트 (div)가 description을 감싸고 있는 Typography 컴포넌트 (p)와 충돌한 것
+  
+4) Typography를 Box (div)로 바꾸니 해결~! 오예 
 
 <br />
 <br />
