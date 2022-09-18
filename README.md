@@ -69,8 +69,9 @@
 
 4) 삭제..문제 해결
 
-### `오류 2.` validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
-- div는 p의 자식 요소로 들어갈 수 없음
+### `오류 2.` validateDOMNesting(...) : div cannot appear as a descendant of p.
+
+ - div는 p의 자식 요소로 들어갈 수 없음
   
 at Stack (http://localhost:3000/portfolio_anne/static/js/vendors~main.chunk.js:283849:91)
 at p
@@ -88,13 +89,23 @@ at Typography (http://localhost:3000/portfolio_anne/static/js/vendors~main.chunk
   
 해당 파일에서 stack 컴포넌트 쓰고 있는 부분은 이 부분 뿐인데...아니나 다를까 저 부분을 삭제해보니 해당 오류 안 일어남!
   
- data파일의 description 정보 안에 있는 Stack 컴포넌트 (div)가 description을 감싸고 있는 Typography 컴포넌트 (p)와 충돌한 것
+data파일의 description 정보 안에 있는 Stack 컴포넌트 (div)가 description을 감싸고 있는 Typography 컴포넌트 (p)와 충돌한 것
   
 4) Typography를 Box (div)로 바꾸니 해결~! 오예 
 
+* 비슷한 오류로 validateDOMNesting(...): <h5> cannot appear as a descendant of <p>. 가 있었음; 타이포그라피 안에 쓰잘데기 없는 거 제발 넣지말자!!
+
 <br />
 <br />
 
+### `오류 3.` index.js:1 Warning: Received `true` for a non-boolean attribute `container`.
+- 불리언이 아닌 attr 'container'에 true 값이 감지되었다!!
+1) 오류 발생한 부분 찾기 (StrongPoints.js)
+2) 단독으로 덩그러니 들어가 있는 container attr 찾기 (왜냐하면, 불리언 값이 아닌데 true 가 잡혔다는 오류가 떴기 때문! 단독으로 오면 안되는 attr 하나가 덩그러니 있을 가능성이 큼)
+3) badge의 container라는 attr 발견, 모두 삭제
+  
+
+  
 ## ✔️ 사용한 기술, 프로젝트를 통해 얻은 지식
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 - 사실 포폴 사이트 구성 자체는 정말 간단해 보이지만... 심각할 정도로 많은 `문제`들에 봉착했었다.
