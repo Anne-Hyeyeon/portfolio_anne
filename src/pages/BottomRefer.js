@@ -19,25 +19,12 @@ Coded by www.creative-tim.com
 
 
 import React from 'react';
-import { styled, Container, Link } from '@mui/material';
+import { Container, Link } from '@mui/material';
 import MKBox from 'components/MKBox';
 import MenuBookTwoToneIcon from '@mui/icons-material/MenuBookTwoTone';
 import MKTypography from 'components/MKTypography';
-import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 
-function Testimonials() {
-    const HtmlTooltip = styled(({ className, ...props }) => (
-        <Tooltip {...props} classes={{ popper: className }} />
-      ))(({ theme }) => ({
-        [`& .${tooltipClasses.tooltip}`]: {
-          backgroundColor: '#f5f5f9',
-          color: 'rgba(0, 0, 0, 0.87)',
-          maxWidth: 220,
-          fontSize: theme.typography.pxToRem(12),
-          border: '1px solid #dadde9',
-        },
-      }));
-      
+function BottomRefer() {   
   return (
     <MKBox component="section" py={15} bgColor="#fff">
          <Container maxWidth="lg">
@@ -88,27 +75,9 @@ function Testimonials() {
             }}>     
         <Link underline="hover" href="https://github.com/Anne-Hyeyeon">🖥 https://github.com/Anne-Hyeyeon</Link>
         </MKTypography>
-        <MKTypography
-            variant="body2" 
-            mt={1}
-            sx={{
-                textAlign: 'center',
-
-            }}>
-                <HtmlTooltip
-        title={
-          <>
-            개발 블로그가 아닌 <em>개인 블로그</em>입니다. 처음에는 개발과 관련된 플랫폼이 아닌 만큼, 제외 여부에 대해서 많은 고민이 있었습니다. 하지만 최종적으로, 저를 가장 잘 보여줄 수 있는 SNS이기에 첨부하기로 결정했습니다! 💕 들어가시면 제 인생 이야기와 생각에 관한 글을 읽어보실 수 있습니다 (재미보장)
-          </>
-        }
-      >
-       
-       <Link underline="hover" href="          https://blog.naver.com/khy2106/">📝 https://blog.naver.com/khy2106</Link>
-      </HtmlTooltip>    
-        </MKTypography>
     </Container>
     </MKBox>
   );
 }
 
-export default Testimonials;
+export default BottomRefer;

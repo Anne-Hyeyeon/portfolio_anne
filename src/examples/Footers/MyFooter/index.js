@@ -7,7 +7,6 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import MKTypography from "components/MKTypography";
-import { FormatBold } from "@mui/icons-material";
 
 function MyFooter() {
   function Copyright() {
@@ -40,16 +39,6 @@ function MyFooter() {
           mr={3}
         >
           <i className="fab fa-github" />
-        </MKTypography>
-        <MKTypography
-          component="a"
-          target="blank"
-          variant="h1"
-          href="https://blog.naver.com/khy2106/222766215985s"
-          mr={3}
-          pt={2}
-        >
-          <FormatBold color="dark" />
         </MKTypography>
       </MKBox>
       <Box
