@@ -56,6 +56,18 @@
 
 <br />
 
+## ✔️ 오류 수정
+### `오류 1.` index.js:1 Warning: Received 'true' for a non-boolean attribute `d`.
+- 해석해보면, 불리언을 받을 수 없는 attr 'd'에 true가 와 있음. 
+1) 해당 오류가 일어난 부분 찾기 -   at ExampleCard  보고 ExampleCard 컴포넌트가 사용된 파일 찾아냄
+2) ExampleCard 가 사용된 파일은 Projects.js밖에 없음
+3) Projects.js 안에 들어가보니
+```js
+<ExampleCard image={image} name={name} display="grid" minHeight="auto" d />
+```
+이렇게 맨 뒤에 d라는 오타가 들어가 attr로 인식되고 있는 걸 확인함!
+4) 삭제..문제 해결
+
 ## ✔️ 추가, 보완할 부분
 - (언제까지 유행할 진 모르겠지만) 요즘 `One Page` 디자인 사이트가 인기다. 해당 방식으로, 딱 보기만 해도 너무 예쁘다는 감탄사가 튀어나올법한 사이트를 만들고 싶다! (한 1년 뒤엔 어떤 디자인이 유행하고 있을까? 핵궁금 🤔)
 - 개발자로서 진행한 프로젝트를 많이 못 넣은 게 아쉽다. 앞으로 강의에서 진행한 프로젝트라도 웹으로 꼭 배포해보도록 하자
