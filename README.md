@@ -56,14 +56,74 @@
 
 <br />
 
-## ✔️ 추가, 보완할 부분
-- (언제까지 유행할 진 모르겠지만) 요즘 `One Page` 디자인 사이트가 인기다. 해당 방식으로, 딱 보기만 해도 너무 예쁘다는 감탄사가 튀어나올법한 사이트를 만들고 싶다! (한 1년 뒤엔 어떤 디자인이 유행하고 있을까? 핵궁금 🤔)
-- 개발자로서 진행한 프로젝트를 많이 못 넣은 게 아쉽다. 앞으로 강의에서 진행한 프로젝트라도 웹으로 꼭 배포해보도록 하자
-- `React Hooks`를 이용한 기능이 생각보다 많지 않다... 꼭 넣어야 한다는 법칙같은 건 없지만 복습할 수 없어서 아쉬웠다. 너무 라이브러리에 의존했나...? 싶다가도, 라이브러리 잘 쓰는 것도 능력이지! 이런 (오만한) 생각도 들고... 선배 프론트 개발자님이 생기면 꼭 이 부분에 대해 여쭤보고 싶다.
+## ✔️ 오류 수정
+### `오류 1.` index.js:1 Warning: Received 'true' for a non-boolean attribute `d`.
+- 해석해보면, 불리언을 받을 수 없는 attr 'd'에 true가 와 있음. 
+1) 해당 오류가 일어난 부분 찾기 -   at ExampleCard  보고 ExampleCard 컴포넌트가 사용된 파일 찾아냄
+2) ExampleCard 가 사용된 파일은 Projects.js밖에 없음
+3) Projects.js 안에 들어가보니
+```js
+<ExampleCard image={image} name={name} display="grid" minHeight="auto" d />
+```
+이렇게 맨 뒤에 d라는 오타가 들어가 attr로 인식되고 있는 걸 확인함!
+
+4) 삭제..문제 해결
+
+<br />
+
+### `오류 2.` validateDOMNesting(...) : div cannot appear as a descendant of p.
+
+ - div는 p의 자식 요소로 들어갈 수 없음
+  
+at Stack (http://localhost:3000/portfolio_anne/static/js/vendors~main.chunk.js:283849:91)
+at p
+at Typography (http://localhost:3000/portfolio_anne/static/js/vendors~main.chunk.js:293632:91)
+  
+
+1) 처음에 이거 보고 Stacks.js에서 오류가 일어났나? 했는데.. MUI의 Stack 컴포넌트였다. (바보)
+2) 해당 오류가 일어난 Projects 파일로 이동!
+3)
+```js
+<MKTypography variant="body2" mt={1}>
+  {description}
+</MKTypography>
+```
+  
+해당 파일에서 stack 컴포넌트 쓰고 있는 부분은 이 부분 뿐인데...아니나 다를까 저 부분을 삭제해보니 해당 오류 안 일어남!
+  
+data파일의 description 정보 안에 있는 Stack 컴포넌트 (div)가 description을 감싸고 있는 Typography 컴포넌트 (p)와 충돌한 것
+  
+4) Typography를 Box (div)로 바꾸니 해결~! 오예 
+
+* 비슷한 오류로 validateDOMNesting(...): h5 cannot appear as a descendant of p. 가 있었음; 타이포그라피 안에 쓰잘데기 없는 거 제발 넣지말자!!
 
 <br />
 <br />
 
+ 
+### `오류 3.` index.js:1 Warning: Received 'true' for a non-boolean attribute 'container'.
+- 불리언이 아닌 attr 'container'에 true 값이 감지되었다!!
+1) 오류 발생한 부분 찾기 (StrongPoints.js)
+2) 단독으로 덩그러니 들어가 있는 container attr 찾기 (왜냐하면, 불리언 값이 아닌데 true 가 잡혔다는 오류가 떴기 때문! 단독으로 오면 안되는 attr 하나가 덩그러니 있을 가능성이 큼)
+3) Box안에 있는 container attr 지움
+4) 삭제 -> 문제 해결됨
+
+<br />
+ 
+### `오류 4.` Failed prop type: The prop 'description' is marked as required in 'DefaultInfoCard', but its value is 'undefined'.
+ - DefaultInfoCard 컴포넌트에는 prop 'description'이 필요하나, undefined다.
+ 
+ 이 오류는... 내가 DefaultInfoCard의 desc 부분을 쓸 때 - 줄바꿈이 안 되는 걸 확인하고 사용하지 안힉로 결심. desc prop을 제거한 게 원인이 되어 일어났다. 
+
+ 1) DefaultInfoCard의 컴포넌트 원본파일 들어감
+ 2) description이 출력되는 부분 모두 삭제함. 따라서 이 컴포넌트는 description이 필수 props가 아니게 됨. 
+ 3) 오류 해결 
+ 
+ * 그냥 아이콘 + 타이포그래피 사용하면 될 걸 굳이 카드 컴포넌트를 가져와서 이 사단이 났다...
+
+ <br />
+ <br />
+  
 ## ✔️ 사용한 기술, 프로젝트를 통해 얻은 지식
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 - 사실 포폴 사이트 구성 자체는 정말 간단해 보이지만... 심각할 정도로 많은 `문제`들에 봉착했었다.
