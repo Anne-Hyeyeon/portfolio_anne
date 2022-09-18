@@ -69,6 +69,8 @@
 
 4) 삭제..문제 해결
 
+<br />
+
 ### `오류 2.` validateDOMNesting(...) : div cannot appear as a descendant of p.
 
  - div는 p의 자식 요소로 들어갈 수 없음
@@ -93,18 +95,34 @@ data파일의 description 정보 안에 있는 Stack 컴포넌트 (div)가 descr
   
 4) Typography를 Box (div)로 바꾸니 해결~! 오예 
 
-* 비슷한 오류로 validateDOMNesting(...): <h5> cannot appear as a descendant of <p>. 가 있었음; 타이포그라피 안에 쓰잘데기 없는 거 제발 넣지말자!!
+* 비슷한 오류로 validateDOMNesting(...): h5 cannot appear as a descendant of p. 가 있었음; 타이포그라피 안에 쓰잘데기 없는 거 제발 넣지말자!!
 
 <br />
 <br />
 
-### `오류 3.` index.js:1 Warning: Received `true` for a non-boolean attribute `container`.
+ 
+### `오류 3.` index.js:1 Warning: Received 'true' for a non-boolean attribute 'container'.
 - 불리언이 아닌 attr 'container'에 true 값이 감지되었다!!
 1) 오류 발생한 부분 찾기 (StrongPoints.js)
 2) 단독으로 덩그러니 들어가 있는 container attr 찾기 (왜냐하면, 불리언 값이 아닌데 true 가 잡혔다는 오류가 떴기 때문! 단독으로 오면 안되는 attr 하나가 덩그러니 있을 가능성이 큼)
-3) badge의 container라는 attr 발견, 모두 삭제
-  
+3) Box안에 있는 container attr 지움
+4) 삭제 -> 문제 해결됨
 
+<br />
+ 
+### `오류 4.` Failed prop type: The prop 'description' is marked as required in 'DefaultInfoCard', but its value is 'undefined'.
+ - DefaultInfoCard 컴포넌트에는 prop 'description'이 필요하나, undefined다.
+ 
+ 이 오류는... 내가 DefaultInfoCard의 desc 부분을 쓸 때 - 줄바꿈이 안 되는 걸 확인하고 사용하지 안힉로 결심. desc prop을 제거한 게 원인이 되어 일어났다. 
+
+ 1) DefaultInfoCard의 컴포넌트 원본파일 들어감
+ 2) description이 출력되는 부분 모두 삭제함. 따라서 이 컴포넌트는 description이 필수 props가 아니게 됨. 
+ 3) 오류 해결 
+ 
+ * 그냥 아이콘 + 타이포그래피 사용하면 될 걸 굳이 카드 컴포넌트를 가져와서 이 사단이 났다...
+
+ <br />
+ <br />
   
 ## ✔️ 사용한 기술, 프로젝트를 통해 얻은 지식
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
