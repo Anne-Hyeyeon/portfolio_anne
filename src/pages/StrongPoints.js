@@ -63,7 +63,7 @@ function StrongPoints() {
           <Card>
               <CardContent>
                 <MKBox component="div" mt={2}>
-                  <MKTypography variant="h5">Hardworking</MKTypography>
+                  <MKTypography variant="h5">A hardworking, responsible person</MKTypography>
                 </MKBox>
                 <MKTypography variant="body1" mb={1}>성실함만은 자부할 수 있습니다.</MKTypography>
                 <MKTypography lineHeight={2}  variant="body2" color="dark">
@@ -90,7 +90,7 @@ function StrongPoints() {
                 <MKTypography lineHeight={2} variant="body2" color="dark">
                  메일 쓰기는 물론 클라이언트 응대, 소비자 상담하는 방법까지 실무를 통해 익혔습니다. 보통 신입이 사무실에 처음 왔을 때 처음부터 숙지해야 할 것들을, <b>6년의 업무 경험</b>을 통해 이미 숙달시켜 놓은 상태입니다.
                 <br /> 사무실 경험이 있다는 건 비단 비즈니스 스킬만을 뜻하는 건 아닙니다. <b>좋은 팀 분위기</b>를 위해서는 제가 어떤 태도와 자세를 취해야 하는지. 어떤 행동을 해서는 안 되는지 잘 파악하고 있습니다. 
-                <br /> <b>기본 업무 매너</b>가 잘 갖춰져 있어 사람들을 당황스럽게 하는 돌발 행동이나 언행(!)을 걱정할 필요가 없습니다. 때로는 열정적으로, 때로는 뜨뜻하게. 상황과 시기를 고려해 주변 사람들의 기분을 <b>산뜻하게</b> 해 줄 수 있는, 6년 차 직장인 김혜연입니다. 
+                <br /> <b>기본 업무 매너</b>가 잘 갖춰져 있어 사람들을 당황스럽게 하는 돌발 행동이나 발언(!)을 걱정할 필요가 없습니다. 때로는 열정적으로, 때로는 뜨뜻하게. 상황과 시기를 고려해 주변 사람들의 기분을 <b>산뜻하게</b> 해 줄 수 있는, 6년 차 직장인 김혜연입니다. 
                 </MKTypography>
                   <MKBox mt={2}>
                    <Stack direction="row" alignItems="flex-end" spacing={0.5}>                

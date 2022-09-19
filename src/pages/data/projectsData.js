@@ -70,7 +70,7 @@ export default [
     description: (
       <Stack direction="row" alignItems="flex-end" spacing={0.5}>
         <MKBadge badgeContent="#React" variant="contained" color="secondary" container />
-        <MKBadge badgeContent="#Material UI" variant="contained" color="secondary" container />
+        <MKBadge badgeContent="#Bootstrap" variant="contained" color="secondary" container />
       </Stack>
     ),
   },
