@@ -113,7 +113,7 @@ data파일의 description 정보 안에 있는 Stack 컴포넌트 (div)가 descr
 ### `오류 4.` Failed prop type: The prop 'description' is marked as required in 'DefaultInfoCard', but its value is 'undefined'.
  - DefaultInfoCard 컴포넌트에는 prop 'description'이 필요하나, undefined다.
  
- 이 오류는... 내가 DefaultInfoCard의 desc 부분을 쓸 때 - 줄바꿈이 안 되는 걸 확인하고 사용하지 안힉로 결심. desc prop을 제거한 게 원인이 되어 일어났다. 
+ 이 오류는... 내가 DefaultInfoCard의 desc 부분을 쓸 때 - 줄바꿈이 안 되는 걸 확인하고 사용하지 않기로 결심. desc prop을 제거한 게 원인이 되어 일어났다. 
 
  1) DefaultInfoCard의 컴포넌트 원본파일 들어감
  2) description이 출력되는 부분 모두 삭제함. 따라서 이 컴포넌트는 description이 필수 props가 아니게 됨. 
