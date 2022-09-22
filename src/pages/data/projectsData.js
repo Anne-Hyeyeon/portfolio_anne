@@ -29,11 +29,10 @@ export default [
     route: "https://github.com/Anne-Hyeyeon/withdog_teamproject_KoreaIT",
     description: (
       <Stack direction="row" alignItems="flex-end" spacing={0.5}>
-        <MKBadge badgeContent="#React Hook" variant="contained" color="secondary" container />
-        <MKBadge badgeContent="#팀프로젝트" variant="contained" color="secondary" container />
+        <MKBadge badgeContent="#React" variant="contained" color="secondary" container />
         <MKBadge badgeContent="#Firebase" variant="contained" color="secondary" container />
         <MKBadge badgeContent="#Git" variant="contained" color="secondary" container />
-        <MKBadge badgeContent="#Rest API" variant="contained" color="secondary" container />
+        <MKBadge badgeContent="#팀프로젝트" variant="contained" color="secondary" container />
       </Stack>
     ),
   },
@@ -58,8 +57,8 @@ export default [
       <Stack direction="row" alignItems="flex-end" spacing={0.5}>
         <MKBadge badgeContent="#Vanila JS" variant="contained" color="secondary" container />
         <MKBadge badgeContent="#HTML" variant="contained" color="secondary" container />
-        <MKBadge badgeContent="#CSS" variant="contained" color="secondary" container />
-        <MKBadge badgeContent="#Rest API" variant="contained" color="secondary" container />
+        <MKBadge badgeContent="#Bootstrap" variant="contained" color="secondary" container />
+        <MKBadge badgeContent="#API" variant="contained" color="secondary" container />
       </Stack>
     ),
   },

@@ -5,7 +5,6 @@
 
 import * as React from "react"
 import { styled, Collapse, IconButton } from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore"
 
 
 // @mui material components
@@ -77,10 +76,10 @@ function Profile() {
                   ・ 타인을 배려하는 따뜻한 리더십을 지닌 사람입니다. 🙆‍♀️
                 </MKTypography>
                 <MKTypography variant="body2" mb={1}>
-                  ・ 구글링은 자신있습니다. (초등학교 정보사냥대회 전교 1등 출신! 네... TMI입니다. 😽) 
+                  ・ 안 그런 척 하면서, 조용히 결과물로 인정 받는 거 좋아하는 소심한 관종입니다. 💃🏽
                 </MKTypography>
                 <MKTypography variant="body2" mb={1}>
-                  ・ 안 그런 척 하면서, 조용히 결과물로 인정 받는 거 좋아하는 소심한 관종입니다. 💃🏽
+                  ・ 초등학교 정보사냥대회 교내 1등 출신! (... TMI입니다. 😽) 
                 </MKTypography>
               </MKBox>
             </Grid>
