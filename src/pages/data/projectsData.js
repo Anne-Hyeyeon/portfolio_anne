@@ -55,7 +55,7 @@ export default [
     route: "https://github.com/Anne-Hyeyeon/Nomadcoders_momentum",
     description: (
       <Stack direction="row" alignItems="flex-end" spacing={0.5}>
-        <MKBadge badgeContent="#Vanila JS" variant="contained" color="secondary" container />
+        <MKBadge badgeContent="#Vanilla JS" variant="contained" color="secondary" container />
         <MKBadge badgeContent="#HTML" variant="contained" color="secondary" container />
         <MKBadge badgeContent="#Bootstrap" variant="contained" color="secondary" container />
         <MKBadge badgeContent="#API" variant="contained" color="secondary" container />
